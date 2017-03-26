@@ -59,14 +59,14 @@ public class EntityTameableDragon extends EntityTameable {
     private static final Logger L = LogManager.getLogger();
     
     public static final IAttribute MOVEMENT_SPEED_AIR = new RangedAttribute(null,
-        "generic.movementSpeedAir", 1.5, 0.0, Double.MAX_VALUE)
+        "generic.movementSpeedAir", 4.0, 0.0, Double.MAX_VALUE)
             .setDescription("Movement Speed Air")
             .setShouldWatch(true);
     
     
     // base attributes
     public static final double BASE_SPEED_GROUND = 0.3;
-    public static final double BASE_SPEED_AIR = 0.4;
+    public static final double BASE_SPEED_AIR = 1.2;
     public static final double BASE_DAMAGE = 8;
     public static final double BASE_HEALTH = 60;
     public static final float BASE_WIDTH = 2.75f;
