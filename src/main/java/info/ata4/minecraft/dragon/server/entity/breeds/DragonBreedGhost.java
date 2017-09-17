@@ -32,6 +32,7 @@ public class DragonBreedGhost extends DragonBreed {
         super("undead", 0xbebebe);
         
         addImmunity(DamageSource.wither);
+        addImmunity(DamageSource.starve);
         
         addHabitatBlock(Blocks.WEB);
     }

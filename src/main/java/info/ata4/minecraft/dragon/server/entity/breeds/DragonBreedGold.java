@@ -10,33 +10,21 @@
 package info.ata4.minecraft.dragon.server.entity.breeds;
 
 import info.ata4.minecraft.dragon.server.entity.EntityTameableDragon;
-import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.DamageSource;
 
 /**
  *
- * @author Nico Bergemann <barracuda415 at yahoo.de>
+ * @author Jesse Whitley,  <jessewhitley at github.com>
  */
-public class DragonBreedNether extends DragonBreed {
+public class DragonBreedGold extends DragonBreed {
 
-    DragonBreedNether() {
-        super("nether", 0x793838);
+    DragonBreedGold() {
+        super("golden", 0x7f6b00);
         
-        addImmunity(DamageSource.lava);
-        addImmunity(DamageSource.hotFloor);
-        addImmunity(DamageSource.wither);
+        addImmunity(DamageSource.inFire);
         
-        addHabitatBlock(Blocks.NETHERRACK);
-        addHabitatBlock(Blocks.SOUL_SAND);
-        addHabitatBlock(Blocks.NETHER_BRICK);
-        addHabitatBlock(Blocks.NETHER_BRICK_FENCE);
-        addHabitatBlock(Blocks.NETHER_BRICK_STAIRS);
-        addHabitatBlock(Blocks.NETHER_WART);
-        addHabitatBlock(Blocks.GLOWSTONE);
-        addHabitatBlock(Blocks.QUARTZ_ORE);
-        
-        addHabitatBiome(Biomes.HELL);
+        addHabitatBlock(Blocks.gold_block);
     }
 
     @Override
@@ -47,6 +35,10 @@ public class DragonBreedNether extends DragonBreed {
     @Override
     public void onDisable(EntityTameableDragon dragon) {
         dragon.getBrain().setAvoidsWater(false);
+    }
+
+    @Override
+    public void onUpdate(EntityTameableDragon dragon) {
     }
 
     @Override

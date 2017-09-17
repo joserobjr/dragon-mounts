@@ -30,7 +30,9 @@ public enum EnumDragonBreed implements IStringSerializable {
     GHOST(4, DragonBreedGhost::new),
     ICE(5, DragonBreedIce::new),
     NETHER(6, DragonBreedNether::new),
-    WATER(7, DragonBreedWater::new);
+    WATER(7, DragonBreedWater::new),
+    GOLDEN(8, DragonBreedGold::new),
+    VOID(9, DragonBreedVoid::new);
     
     public static final EnumDragonBreed DEFAULT = END;
     
